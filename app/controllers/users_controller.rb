@@ -1,5 +1,4 @@
-class UsersController < ApplicationController::Base
-  def show
-    @users = "OSAD 45"
+class UsersController < ApplicationController
+  def index
+    @users = User.all
   end
-end
